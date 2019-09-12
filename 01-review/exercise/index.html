@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div > div {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+.a {
+  background-color: #FCB10F;
+}
+.b {
+  background-color: #801340;
+}
+.c {
+  background-color: #4D2975;
+}
+.d {
+  background-color: #244479;
+}
+.e {
+  background-color: #55B4AF;
+}
+.f {
+  background-color: rgba(128, 19, 64, 0.7); 
+}
+.g {
+  background-color: rgba(77, 41, 117, 0.5);
+}
+.h {
+  background-color: rgba(252, 177, 15, 0.7);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----- Flex Solution --- */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+}
+
+.wrapper > * {
+  margin-bottom: 1rem;
+}
+
+.a,
+.h {
+  flex-basis: 66%;
+}
+.b,
+.g,
+.d,
+.e,
+.f {
+  flex-basis: 32%;
+}
+.c {
+  flex-basis: 100%;
+}
+
+/* ----Grid Solution---- */
+
+
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="a">A</div>
+    <div class="b">B</div>
+    <div class="c">C</div>
+    <div class="d">D</div>
+    <div class="e">E</div>
+    <div class="f">F</div>
+    <div class="g">G</div>
+    <div class="h">H</div>
+  </div>
+  
+  <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3273620/grid1.png" alt="Make it look like this, uncomment to see the image"> -->
+</body>
+</html>
